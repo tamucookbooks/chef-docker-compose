@@ -1,21 +1,17 @@
 ---
 driver:
   name: vagrant
+  customize:
+    cableconnected1: 'on'
 
 provisioner:
-  name: chef_solo
+  name: chef_zero
 
 platforms:
-  - name: ubuntu-12.04
-    driver_config:
-      chef_require_omnibus: 11.14.6
-  - name: centos-6.4
-    driver_config:
-      chef_require_omnibus: 11.12.8
+  - name: ubuntu-14.04
 
 suites:
   - name: default
     run_list:
       - recipe[docker-compose::default]
-      - recipe[docker-compose_test::default]
     attributes:
