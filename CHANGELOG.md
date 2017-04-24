@@ -3,6 +3,10 @@ docker-compose CHANGELOG
 
 This file is used to list changes made in each version of the docker-compose cookbook.
 
+0.1.0
+-----
+- [vblessing] - remove python
+
 0.0.2
 -----
 - [Shuji Yamada] - docker-compose v1.6.3
